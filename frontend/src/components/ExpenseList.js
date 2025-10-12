@@ -23,7 +23,7 @@ const ExpenseList = ({ expenses, onDeleteExpense, onEditExpense }) => {
               <tr key={expense._id}>
                 <td>{format(new Date(expense.date), 'MM/dd/yyyy')}</td>
                 <td>{expense.category}</td>
-                <td>${expense.amount.toFixed(2)}</td>
+                <td>{expense.amount.toFixed(2)}</td>
                 <td>{expense.note}</td>
                 <td>
                   {}
